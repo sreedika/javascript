@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var pic_tracker="first";
+		function imagech(){
+			var pic=document.getElementById('baabtra');
+			if(pic_tracker=="first"){
+			pic.src="logo_cyber.png";
+			pic_tracker="second";
+		}
+		else
+		{
+			pic.src="logo_baabtra.png";
+			pic_tracker="first";
+		}
+		}
+		setTimeout('imagech()',2000);
+		 var timer=setInterval('imagech()',1000);
+			</script>
+</head>
+<body>
+<img src="logo_baabtra.png" id="baabtra" onclick="clearInterval(timer)">
+</body>
+</html>

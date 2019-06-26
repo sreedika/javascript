@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function form_validation()
+		{
+			Vname=document.getElementsByClassName('first_name');
+			msg_box=document.getElementsByClassName('message');
+			len=Vname.length;
+			for(i=0;i<len;i++){
+				if(Vname[i].value==""){
+				msg_box[i].innerHTML="please fill this field";
+				Vname[i].style.borderColor="red";
+				
+			}
+			else{
+				msg_box[i].innerHTML="";
+				Vname[i].style.borderColor="";
+			}
+		}
+
+		}
+	</script>
+</head>
+<body bgcolor="#9ff">
+	<center><h1>Student Registration Form</center>
+<form>
+	<center>
+<input type="text" name="first_name" class="first_name" placeholder="Name"><span class="message" style="color: red"></span><br><br>
+
+
+<input type="text" name="address" class="first_name" placeholder="Personal address"><span class="message" style="color: red"></span><br><br>
+
+<input type="text" name="Email_Id" class="first_name" placeholder="EmailId"><span class="message" style="color: red"></span><br><br>
+
+<input type="text" name="Mobile_no" class="first_name" placeholder="Mobile No"><span class="message" style="color: red"></span><br><br>
+
+<input type="text" name="pass" class="first_name" placeholder="Password"><span class="message" style="color: red"></span><br><br>
+
+<input type="text" name="c_pass" class="first_name" placeholder=" Confirm Password"><span class="message" style="color: red"></span><br><br>
+<input type="button" name="btn" value="submit" onclick="form_validation()"></center>
+</body>
+</html>

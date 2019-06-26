@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function check_val(){
+			// Vname=document.getElementsByClassName('quali');
+			GRADUATE_checked=document.getElementById('Qualification_GRADUATE').checked;
+			POSTGRADUATE_checked=document.getElementById('Qualification_POSTGRADUATE').checked;
+			msg_box=document.getElementsByClassName('message');
+			if(GRADUATE_checked==false&&POSTGRADUATE_checked==false){
+				msg_box[0].style.color="red";
+				msg_box[1].style.color="red";
+
+				return false;
+			}
+			else{
+				msg_box[0].style.color="";
+				msg_box[1].style.color="";
+				return true;
+			}
+
+		}
+		
+	</script>
+</head>
+<body bgcolor="#9ff">
+	<form>
+		<center>
+			<h1>Check Box Validation</h1><br><br>
+			<label>Qualification:</label>
+		<input type="checkbox" name="Qualification" value="MALE" id="Qualification_GRADUATE"><span class="message">GRADUATE</span>
+		<input type="checkbox" name="Qualification" value="FEMALE" id="Qualification_POSTGRADUATE"><span class="message">POST GRADUATE</span><br><br>
+		<input type="button" name="btn" value="submit" onclick="check_val()"></center>
+	</form>
+
+</body>
+</html>

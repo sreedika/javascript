@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var a="apple";//global
+		document.write("<h2>global</h2><br>");
+		function show()
+		{ 
+			document.write(a+"inside the function<br>");
+		}
+		show();
+		document.write(a+"outside the function<br>");
+		function showdata()
+		{
+			var a="apple";
+			document.write("<h2>local</h2><br>");
+			document.write(a+"inside the function");
+		}
+		showdata();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

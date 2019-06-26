@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function nameid(){
+			fname=document.getElementById('first_name').value;
+			lname=document.getElementById('last_name').value;
+			emailadd=document.getElementById('email_address').value;
+			document.getElementById('print_name').innerHTML=fname+" "+lname+" "+emailadd;
+		}
+	</script>
+</head>
+<body>
+<label>First Name </label>
+<input type="text" name="first_name" id="first_name"><br><br>
+<label>Last Name </label>
+<input type="text" name="last_name" id="last_name"><br><br>
+<label>Email </label>
+<input type="text" name="email_address" id="email_address"><br><br>
+<label>Password </label>
+<input type="Password" name="passw" id="passw"><br><br>
+<input type="button" name="btn" value="submit" onclick="nameid()">
+<p id="print_name"></p>
+</body>
+</html>
