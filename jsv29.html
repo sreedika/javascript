@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function val(){
+		username="admin";
+		password="admin123";
+		fname=document.getElementById('first_name').value;
+		lname=document.getElementById('last_name').value;
+		if(username==fname&&password==lname){
+			document.write("Login Successfull");
+		}
+		else
+		{
+			document.write("Login Error");
+		}
+	}
+	</script>
+</head>
+<body>
+<form>
+	username:<input type="text" name="username" id="first_name">
+	password:<input type="password" name="password" id="last_name">
+	<input type="submit" name="btn" value="login" onclick="val()">
+</body>
+</html>
